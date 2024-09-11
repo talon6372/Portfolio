@@ -1,35 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daniel's Place</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Daniel Wright's Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-    <a href="https://talon6372.github.io/Resume/">My Resume</a>
-    <hr />
+    <div class="container-fluid">
+      <nav
+        class="navbar navbar-expand-lg sticky-top bg-dark border-bottom border-body"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Daniel Wright</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse d-flex navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://talon6372.github.io/Resume/"
+                  >My Resume</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  My Work
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="main" class="row">
+        <div id="div_welcome" class="mt-5">
+          <h1>Hello, and Welcome to my Portfolio</h1>
+          <h2>I'm a Software Developer</h2>
+          <div class="d-flex justify-content-center h-100">
+            <div class="image_outer_container">
+              <div class="green_icon"></div>
+              <div class="image_inner_container">
+                <img
+                  src="./assets/ProfilePic.jpg" alt="Picture of Dan"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="row p-4">
+        <h2 class="mt-4 mb-5">Who am I?</h2>
+        <div class="col-4 offset-2">
+          <img src="./assets/images/busy-typing-cat-on-laptop-0rm348r45qbhvyam-2531852791.gif", alt="Cat Typing" width="300"/>
+        </div>
+        <div class="col-6">
+          <h3>Design and Development</h3>
+          <p>Since i was a teen i loved to tinker with things and solve problems.  Tearing down the home computer and putting it back together to see how it works and all.
+            Despite getting into trouble, I knew that this curiousity would serve me well in my ambition to continue learning.  Wasn't til i was in a situation in the military that I realized i could 
+            solve some administrative problems I faced with programming.  I ordered a Java programming book, slayed that problem and never looked back.  It was this moment i found my calling.
+          </p>
+          <ul>
+            <li>&#8269 &nbsp;.Net Technologies</li>
+            <li>&#8269 &nbsp;Front End Languages</li>
+            <li>&#8269 &nbsp;Business Application Development</li>
+            <li>and More...<a href="https://talon6372.github.io/Resume/">Check out my Resume</a></li>
+          </ul>
 
-    <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-    <img
-      src="./assets/images/moving-ranking1.png"
-      alt="List of favorite Movies"
-      height="200"
-    />
-    <br />
+        </div>
 
-    <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-    <img
-      src="./assets/images/birthday-invite.png"
-      alt="Birthday Invite"
-      height="200"
-    />
-    <br />
-
-    <hr />
-    <a href="./public/contact.html">Contact Me</a>
-    <br />
-    <a href="./public/about.html">About Me</a>
+      </div>
+      <div id="contact" class=" row p-4">
+        <h2>Get to know me...</h2>
+        <div class="col-4 offset-2">
+            <p>There are many things i like to do as a developer. In our worlds ever changing landscape in technology I feel if you don't love technology in all 
+              industries its hard to truly keep up with the changes.  So what drives me?</p>
+              <ul>
+                <li><a href="#">Desktop Project Repository</a></li>
+                <li><a href="#">Web Project Repository</a></li>
+                <li><a href="#">Other Project Repository (Games and stuff)</a></li>
+              </ul>
+        </div>
+        <div class="col-6">
+          <img src="./assets/images/cat-scientist-wearing-lab-coat-generative-ai_947227-417-2578315835.jpg" alt="Cat Scientist" width="250"/>
+        </div>
+      </div>
+      <div id="footer" class="row">
+        <div id="footer-links">
+          <a href="https://www.linkedin.com/in/danielwright2/" target="_blank">Linkedin</a>
+        </div>
+        <div id="copy-text">&#169; 2024  Daniel Wright</div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

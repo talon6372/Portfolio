@@ -1,0 +1,134 @@
+body{
+    font-family: roboto, serif;
+}
+
+
+#main
+{
+    background-image: url("./assets/portofolioBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+
+.image_outer_container{
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+    position: relative;
+}
+
+.image_inner_container{
+    border-radius: 50%;
+    padding: 5px;
+ background: #833ab4; 
+ background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4); 
+ background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+}
+.image_inner_container img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.image_outer_container .green_icon{
+  background-color: #4cd137;
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  height: 30px;
+  width: 30px;
+  border:5px solid white;
+  border-radius: 50%;
+}
+
+
+#skills
+{
+    display: flex;
+
+}
+
+#skills > h2{
+    text-align: center;
+    color: #4f9191;
+}
+
+
+#skills > div 
+{
+    justify-content: center;
+}
+#skills > div > img
+{
+    float: left;
+    margin-top: .4rem;
+}
+
+#skills ul{
+    list-style: none;
+}
+
+#skills a{
+    font-weight: bold;
+}
+
+#contact
+{
+    background-color: #33395c;
+    color: white;
+}
+
+#contact > h2{
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+#contact > div{
+    justify-content: center;
+}
+
+#contact img{
+    margin-left: 20rem;
+}
+
+#contact a{
+    color: white;
+}
+
+#contact a:hover{
+    color: orange;
+}
+
+#footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+#footer-links, #copy-text
+{
+    text-align: center;
+}
+
+#footer-links a{
+    color: #4f9191;
+}
+
+#footer-links a:hover {
+    color: orange;
+}
+
+/*bootstrap overrides*/
+#div_welcome
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
